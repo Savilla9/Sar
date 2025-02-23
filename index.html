@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <header>
+        <h1>Portfolio</h1>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul class="nav-links">
+            <li><a href="home.html"><img src="home (1).png" alt="">Home</a></li>
+            <li><a href="#about-me"><img src="info-button.png" alt="">About</a></li>
+            <li><a href="#portfolio"><img src="briefcase.png" alt="">Portfolio</a></li>
+            <li><a href="#contact"><img src="phone.png" alt="">Contact</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="content">
+            <div class="text">
+                <h2>Hi, It’s me</h2>
+                <h1>Sarah Villa Grapa</h1>
+                <p>Aspiring <span class="highlight">Animator</span> from Philippines</p>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/sarah.villa.35728?mibextid=ZbWKwL"><img src="fb.jpg" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/sarah__villa/profilecard/?igsh=MTkwZTUwemIwend4ZA=="><img src="ig.jpg" alt="Instagram"></a>
+                </div>
+            </div>
+            <div class="photos">
+                <img src="1731160206170.png" alt="Sarah Villa Grapa">
+            </div>
+        </div>
+        
+        <!-- About Me Section -->
+        <section id="about-me">
+            <h2>>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>IT Student | Aspiring Animator</h3>
+                    <p>Hello, my name is Sarah Villa D. Grapa, an IT student at NORSU, from Sindangan, Zamboanga del Norte. I am passionate about technology and aspire to become an animator, bringing stories to life through creativity and innovation. I look forward to opportunities to grow and contribute meaningfully to the animation and tech industries.</p>
+                    <ul>
+                        <li><strong>Phone:</strong> +63 657-235-4389</li>
+                        <li><strong>City:</strong> Mandih,Sindangan,Mindanao</li>
+                        <li><strong>E-mail:</strong> sarahvillagrapa@gmail.com</li>
+                       
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="1.jpg" alt="Sarah Villa Grapa" />
+                </div>
+            </div>
+        </section>
+    
+        <!-- Interests Section -->
+        <section class="interests">
+            <h2>Interests</h2>
+            <ul>
+               
+                <li>Animation</li>
+                <li>Painting</li>
+                <li>Sketch</li>
+                
+            </ul>
+        </section>  
+
+        <section id="portfolio">
+        <div class="port-container">
+
+            <!-- Systems Section -->
+            <center><h2>Systems</h2></center>
+            <div class="port-row">
+                <div class="port-system" onclick="openModal('6.PNG', 'Port Booking System', 'A Port Booking System is a digital platform designed to streamline the scheduling and management of port activities, including the reservation of berths, cargo handling slots, and other port services. It enables efficient coordination between shipping lines, port authorities, and logistics providers by providing real-time availability, automated scheduling, and tracking capabilities. The system improves operational efficiency, reduces delays, and enhances transparency in port operations.')">
+                    <h3>Port Booking System</h3>
+                    <img src="5.PNG" alt="Port Booking System">
+                   
+                </div>
+               
+            </div>
+
+           
+
+            <!-- Sketch Section -->
+            <center><h2>Sketch</h2></center>
+            <div class="port-row">
+                <div class="sketch-port" onclick="openModal('3.jpg')">
+                    <h3>Sketch 1</h3>
+                     <img src="3.jpg" alt="Sketch 2">
+                   
+                </div>
+                <div class="sketch-port" onclick="openModal('4.jpg')">
+                    <h3>Sketch 2</h3>
+                    <img src="4.jpg" alt="Sketch 2">
+                    
+                </div>
+            </div>
+
+            <!-- Painting Section -->
+           <center> <h2>Painting</h2></center>
+            <div class="port-row">
+                <div class="painting-port" onclick="openModal('2.jpg')">
+                    <h3>Painting</h3>
+                    <img src="2.jpg" alt="Painting">
+                  
+                </div>
+            </div>
+
+          <center> <h2>Animation</h2></center> 
+            <div class="video-container">
+                
+                <video src="animation.mp4" controls></video>
+               
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>CONTACT ME</h2>
+        <div class="contact-container">
+            <!-- Address -->
+            <div class="contact-item">
+                <i class="fa fa-map-marker"></i>
+                <h3>Address</h3>
+                <p>Mandih,Sindangan,<br>Mindanao</p>
+            </div>
+            <!-- Email -->
+            <div class="contact-item">
+                <i class="fa fa-envelope"></i>
+                <h3>Email</h3>
+                <p>sarahvillagrapa@<br>gmail.com    </p>
+            </div>
+            <!-- Social Media -->
+            <div class="contact-item">
+                <i class="fa fa-share-alt"></i>
+                <h3>Social Media</h3>
+                <p><a src="">Facebook </a> | Instagram</p>
+            </div>
+            <!-- Phone Number -->
+            <div class="contact-item">
+                <i class="fa fa-phone"></i>
+                <h3>Phone Number</h3>
+                <p>+63 657-235-4389</p>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="form-box">
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Last Name, First Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <input type="text" placeholder="Subject" required>
+                <textarea placeholder="Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-image" src="" alt="">
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script>
+        function openModal(image, title, description) {
+            document.getElementById('modal').style.display = 'flex';
+            document.getElementById('modal-image').src = image;
+            document.getElementById('modal-title').textContent = title;
+            document.getElementById('modal-description').textContent = description;
+        }
+
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
